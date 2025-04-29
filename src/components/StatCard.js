@@ -17,7 +17,7 @@ const StatCard = ({ title, value, icon, accentColorClass }) => {
 
   return (
     // Card background uses primary-bg (white/dark gray)
-    <div className={`bg-primary-bg p-6 rounded-lg shadow-md flex items-center border-l-4 ${borderColorClass}`}>
+    <div className={`bg-[var(--primary-bg)] p-6 rounded-lg shadow-md flex items-center border-l-4 ${borderColorClass}`}>
       {/* Icon uses derived accent color */}
       <span className={`material-symbols-outlined text-3xl mr-4 ${iconColorClass}`}>{icon}</span>
       <div>

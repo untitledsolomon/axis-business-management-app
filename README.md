@@ -1,90 +1,115 @@
-AXIS - Business Management System
-<p align="center"> <img src="src/assets/appiconnobg.png" alt="AXIS Logo" width="300" height="auto"> </p>
-Overview
-AXIS is a modern all-in-one business management system built for small businesses. It helps companies efficiently manage inventory, employees, financials, customers, and reporting. With real-time updates, beautiful dashboards, multi-user/team support, and powerful financial tools, AXIS aims to bring enterprise-grade management to small businesses.
+# AXIS - Business Management System
 
-Features
-Core Functionality
-Stock Management: Track inventory levels, purchase orders, and suppliers.
+<p align="center">
+  <img src="src/assets/appiconnobg.png" alt="AXIS Logo" width="200">
+</p>
 
-Employee Management: Manage employee records, roles, and attendance.
+<p align="center">
+  <strong>Modern All-in-One Management for Small Businesses</strong>
+</p>
 
-Financial Management: Handle invoices, payments, expenses, and advanced reporting.
+<!-- Optional Badges (Placeholders) -->
+<!-- 
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status">
+</p> 
+-->
 
-Multi-User Teams: Allow multiple users under one company account with roles and permissions.
+## Overview
 
-Client Management: Track customer profiles, communication, and sales history.
+AXIS is a comprehensive, modern business management system designed specifically for the needs of small businesses. It provides an integrated platform to efficiently manage core operations including inventory, employees, financials, customer relationships, and reporting.
 
-Real-time Dashboard: Live business insights and key metrics at a glance.
+Leveraging real-time data synchronization, intuitive dashboards, multi-user team collaboration, and robust financial tools, AXIS empowers small businesses with capabilities previously accessible only to larger enterprises.
 
-Advanced Reports: Financial statements, sales reports, stock reports, and employee performance.
+## Features
 
-Technical Features
-Real-Time Updates: Live data sync using WebSockets.
+### Core Modules
 
-Secure Authentication: JWT-based secure login system.
+*   **📈 Dashboard:** Real-time overview of key business metrics and insights.
+*   **📦 Stock Management:** Track inventory levels, manage purchase orders, and oversee supplier information.
+*   **👥 Employee Management:** Maintain employee records, assign roles/permissions, and track attendance.
+*   **💰 Financial Management:** Handle invoices, process payments, record expenses, and generate financial reports.
+*   **🤝 Client Management (CRM):** Manage customer profiles, track communication history, and analyze sales interactions.
+*   **📊 Reporting:** Generate advanced reports including financial statements, sales summaries, stock levels, and employee performance.
 
-Role-Based Access Control: Admin, Manager, Employee permission levels.
+### Technical Highlights
 
-Responsive UI: TailwindCSS-powered, mobile-first design.
+*   **⚡ Real-Time Updates:** Live data synchronization across the application via WebSockets.
+*   **🔐 Secure Authentication:** Robust JWT-based authentication system.
+*   **🛡️ Role-Based Access Control (RBAC):** Predefined permission levels (e.g., Admin, Manager, Employee).
+*   **📱 Responsive Design:** Mobile-first interface built with Tailwind CSS.
+*   **🎨 Theme Support:** User-selectable Dark and Light modes for optimal user experience.
 
-Dark/Light Mode: User-selectable themes for better UX.
+## Technology Stack
 
-Technology Stack
-Frontend
-Next.js (React Framework)
+*   **Frontend:** [Next.js](https://nextjs.org/) (React Framework)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Planned/Used)
+*   **Backend & Database:** [Supabase](https://supabase.com/) (PostgreSQL, Auth, Storage, Realtime)
+*   **Future Backend Processing:** Python (Potential for compute-intensive tasks)
 
-TailwindCSS for styling
+## Getting Started
 
-shadcn/ui for elegant UI components
+### Prerequisites
 
-Backend
-Supabase (Database, Authentication, Storage, Realtime)
+*   [Node.js](https://nodejs.org/) (Version 18 or later recommended)
+*   [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+*   A [Supabase](https://supabase.com/) account (free tier available)
 
-Python (for possible future heavy backend processing if needed)
+### Installation & Setup
 
-Getting Started
-Prerequisites
-Node.js (v18+)
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/axis-management.git # Replace with your repo URL
+    cd axis-management
+    ```
 
-Supabase account (free or paid)
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    # yarn install
+    ```
 
-Installation
-Clone the repository
+3.  **Configure Environment Variables:**
+    *   Create a file named `.env.local` in the project root.
+    *   Add your Supabase project URL and Anon Key:
+        ```ini
+        NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+        NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+        ```
+        *(Replace `YOUR_SUPABASE_URL` and `YOUR_SUPABASE_ANON_KEY` with your actual credentials)*
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/axis-management.git
-cd axis-management
-Install frontend dependencies
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    # yarn dev
+    ```
 
-bash
-Copy
-Edit
-npm install
-Configure environment variables
+5.  **Access the application:**
+    Open your web browser and navigate to `http://localhost:3000`.
 
-Create a .env.local file in the root directory
+## Roadmap
 
-Add your Supabase credentials:
+*   **Phase 1 (Current):** Core modules implementation (Web Application).
+*   **Phase 2:** Mobile application development (React Native + Expo) mirroring web functionality.
+*   **Phase 3:** Advanced reporting features, third-party integrations (e.g., accounting software, payment gateways).
 
-ini
-Copy
-Edit
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-Start the development server
+## Contributing
 
-bash
-Copy
-Edit
-npm run dev
-Access the app
+Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-Open your browser and go to http://localhost:3000
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes and commit them (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/your-feature-name`).
+5.  Open a Pull Request.
 
-Mobile App
-A mobile app version (built with React Native + Expo) is planned for Phase 2.
+Please ensure your code adheres to the project's coding standards and includes relevant tests where applicable.
 
-Mobile features will mirror the web app for full accessibility on the go.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details (assuming a LICENSE file exists or will be created).
