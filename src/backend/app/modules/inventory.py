@@ -57,11 +57,11 @@ def edit_product(name, sku, price, tags, category):
     if name not in products:
         raise "Product not in database"
     else:
-        products[name]["name"] = name
         products[name]["sku"] = sku
         products[name]["price"] = price
         products[name]["tags"] = tags
         products[name]["category"] = category
+        save_products(products)
 
 def add_tags(name, tags: type = list):
     products = load_products()

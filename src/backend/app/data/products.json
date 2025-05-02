@@ -3,12 +3,29 @@
         "name": "New Product",
         "sku": "12345",
         "price": 100,
-        "category": "None"
+        "category": "None",
+        "id": 1
     },
     "Product 2": {
         "name": "Product 2",
         "sku": "24221",
         "price": 20000,
-        "category": "Headsets"
+        "category": "Headsets",
+        "id": 2
+    },
+    "Oraimo Headsets": {
+        "name": "Oraimo Headsets",
+        "sku": "678223",
+        "price": 30000,
+        "category": null,
+        "id": 3
+    },
+    "Traffic": {
+        "name": "NoTraffic",
+        "sku": "3532",
+        "price": 4,
+        "category": null,
+        "id": 4,
+        "tags": []
     }
 }
