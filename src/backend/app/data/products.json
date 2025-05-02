@@ -1,0 +1,14 @@
+{
+    "New Product": {
+        "name": "New Product",
+        "sku": "12345",
+        "price": 100,
+        "category": "None"
+    },
+    "Product 2": {
+        "name": "Product 2",
+        "sku": "24221",
+        "price": 20000,
+        "category": "Headsets"
+    }
+}
