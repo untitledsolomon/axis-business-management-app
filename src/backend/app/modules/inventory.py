@@ -47,6 +47,7 @@ def delete_product(name):
 
     if name in products:
         del products[name]
+        save_products(products)
         return True
     else:
         return(True)

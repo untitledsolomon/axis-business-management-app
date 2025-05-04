@@ -16,8 +16,13 @@ const editProduct = async (data:any) => {
   return await axios.post(`${API_BASE}/api/editproduct`, data);
 }
 
+const deleteProduct = async (data:any) => {
+  return await axios.post(`${API_BASE}/api/deleteproduct`, data);
+}
+
 export {
     addProduct,
     getProducts,
-    editProduct
+    editProduct,
+    deleteProduct
 }

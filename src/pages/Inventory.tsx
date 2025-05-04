@@ -2,7 +2,7 @@ import { AppHeader } from "@/components/layouts/AppHeader";
 import { AppLayout } from "@/components/layouts/AppLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Pen, Plus } from "lucide-react"
-import { addProduct, editProduct, getProducts } from "@/api/products";
+import { addProduct, deleteProduct, editProduct, getProducts } from "@/api/products";
 import {
     Form,
     FormControl,
@@ -108,6 +108,11 @@ const Inventory = () => {
     form.reset();
   }
 
+  function handleDelete(values: ProductFormValues) {
+    console.log("Product to delete:", values);
+    deleteProduct(values)
+  }
+
   const handleOpenChange = (open: boolean) => {
     setIsAddProductDialogOpen(open);
     if (!open) {
@@ -166,7 +171,14 @@ const Inventory = () => {
                 <Pen className="mr-0.5 h-4 w-4" />
                 Edit
               </Button>
-              <Button variant="ghost" size="sm" className="text-red-500 hover:text-red-700">Delete</Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-red-500 hover:text-red-700"
+                onClick={() => {
+                  handleDelete(product)
+                }}
+              >Delete</Button>
             </div>
           </td>
         </tr>

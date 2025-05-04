@@ -1,18 +1,4 @@
 {
-    "New Product": {
-        "name": "New Product",
-        "sku": "12345",
-        "price": 100,
-        "category": "None",
-        "id": 1
-    },
-    "Product 2": {
-        "name": "Product 2",
-        "sku": "24221",
-        "price": 20000,
-        "category": "Headsets",
-        "id": 2
-    },
     "Oraimo Headsets": {
         "name": "Oraimo Headsets",
         "sku": "678223",
@@ -20,12 +6,10 @@
         "category": null,
         "id": 3
     },
-    "Traffic": {
-        "name": "NoTraffic",
-        "sku": "3532",
-        "price": 4,
-        "category": null,
-        "id": 4,
-        "tags": []
+    "Dr Lee headsets": {
+        "name": "Dr Lee headsets",
+        "sku": "34678",
+        "price": 5000,
+        "category": null
     }
 }

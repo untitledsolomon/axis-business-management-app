@@ -33,5 +33,12 @@ def edit_product():
     inventory.edit_product(name, sku, price, [], category)
     return  {"message": "product edited successfully"}
 
+@app.route("/api/deleteproduct", methods=["POST"])
+def delete_product():
+    name = request.json.get("name")
+
+    inventory.delete_product(name)
+    return  {"message": "product deleted successfully"}
+
 if __name__ == "__main__":
     socketIO.run(app, host="0.0.0.0", debug=True, port=8000)
