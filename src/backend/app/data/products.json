@@ -10,6 +10,7 @@
         "name": "Dr Lee headsets",
         "sku": "34678",
         "price": 5000,
-        "category": null
+        "category": null,
+        "id": 2
     }
 }

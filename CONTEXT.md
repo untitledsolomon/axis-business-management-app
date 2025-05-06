@@ -25,7 +25,7 @@
 
 ## 🔥 High Priority (Phase 2 - Core Features)
 1. Stock Management Essentials
-   - [ ] Product CRUD (create, read, update, delete)
+   - [x] Product CRUD (create, read, update, delete)
    - [ ] Categories and Suppliers management
    - [ ] Inventory tracking with stock movement logs
    - [ ] Purchase Order Management
